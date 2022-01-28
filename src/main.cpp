@@ -43,14 +43,5 @@ void loop() {
          delay(1000);
    }
 
-   driver.shaft(false);
-   stepDelay = 150;
-   
-   for (int x = 0; x < steps * 2; x++) {
-      digitalWrite(stepPin, HIGH);
-      delayMicroseconds(stepDelay);
-      digitalWrite(stepPin, LOW);
-      delayMicroseconds(stepDelay);
-   }
-   delay(1000);
+  
 }
